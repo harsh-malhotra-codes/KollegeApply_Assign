@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite University - College Admissions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            width: 90%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .page-link {
+            display: block;
+            background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+        }
+
+        .page-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
+        }
+
+        .page-link:nth-child(2) {
+            background: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+            box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+        }
+
+        .page-link:nth-child(2):hover {
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .feature p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .buttons {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Elite University</h1>
+        <p>Welcome to our college admissions portal. Choose your preferred landing page experience below to start your application journey.</p>
+
+        <div class="buttons">
+            <a href="LP-1.html" class="page-link">
+                🌟 Landing Page 1<br>
+                <small>Light Theme with Gallery</small>
+            </a>
+            <a href="LP-2.html" class="page-link">
+                🌙 Landing Page 2<br>
+                <small>Dark Theme with Glassmorphism</small>
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📋 Smart Forms</h3>
+                <p>Client-side validation with real-time feedback</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Fee Calculator</h3>
+                <p>Interactive modal showing course fees</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Analytics Ready</h3>
+                <p>Form submissions sent to Pipedream</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Mobile Friendly</h3>
+                <p>Responsive design for all devices</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
