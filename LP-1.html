@@ -69,16 +69,23 @@
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            font-weight: 700;
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            max-width: 600px;
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 700px;
             margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 400;
         }
 
         .hero {
@@ -91,17 +98,61 @@
         }
 
         .hero-content h2 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            margin-bottom: 25px;
             color: var(--primary-color);
-            font-weight: 700;
+            font-weight: 800;
+            line-height: 1.2;
         }
 
         .hero-content p {
-            font-size: 1rem;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
             color: #4b5563;
             line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        .hero-feature::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
         .hero-image {
@@ -506,11 +557,22 @@
     <main class="container">
         <section class="hero">
             <div class="hero-content">
-                <h2>Unlock Your Potential</h2>
-                <p>Join thousands of successful graduates who have transformed their careers through our comprehensive programs. Apply now and take the first step towards your dream future.</p>
+                <h2>Transform Your Future with Elite Engineering Education</h2>
+                <p>Experience world-class engineering programs designed to prepare you for leadership roles in technology, innovation, and industry. Join India's premier engineering institution.</p>
+                <a href="#leadForm" class="hero-cta">
+                    <span>Start Your Application</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="hero-features">
+                    <div class="hero-feature">Industry-Ready Curriculum</div>
+                    <div class="hero-feature">Expert Faculty</div>
+                    <div class="hero-feature">100% Placement Support</div>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/500x400/4f46e5/ffffff?text=University+Campus" alt="University Campus">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Elite University Modern Campus">
             </div>
         </section>
 
