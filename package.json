@@ -1,0 +1,17 @@
+{
+  "name": "college-admissions-landing-pages",
+  "version": "1.0.0",
+  "description": "Responsive landing pages for college admissions with form submission and fees modal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "keywords": ["landing-page", "college", "admissions", "form", "responsive"],
+  "author": "",
+  "license": "MIT"
+}
